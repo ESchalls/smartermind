@@ -18,6 +18,9 @@
 
 body{
     background: var(--light-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Start of the header */
@@ -113,11 +116,12 @@ transition-delay: 0s;
 footer {
     background-color: var(--dark-navy);
     padding: 50px;
+    margin-top: auto;
 }
 
 /* End of the footer */
 
-/*Kontakt-side Caroline*/
+/*************Kontakt-side Caroline*************/
 section{
     margin: 40px;
 }
@@ -160,7 +164,22 @@ h2{
     border-radius: 10px;
 }
 
-/*Kontakt-side Caroline*/
+/******************Kontakt-side Caroline*******************/
+
+/*Tak for henvendelse*/
+.tak{
+    background-color: var(--light-navy);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 25px;
+}
+
+.tak p{
+    color: white;
+}
+/*Tak for henvendelse*/
 
 
 @media (min-width: 800px) {
