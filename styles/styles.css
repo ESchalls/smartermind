@@ -16,6 +16,10 @@
     margin: 0;
 }
 
+body{
+    background: var(--light-gray);
+}
+
 /* Start of the header */
 
 header {
@@ -112,6 +116,51 @@ footer {
 }
 
 /* End of the footer */
+
+/*Kontakt-side Caroline*/
+section{
+    margin: 40px;
+}
+
+input{
+    background-color: var(--white);
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    border-color: black;
+}
+
+h2{
+    margin: 5px;
+    text-align: center;
+}
+
+.catchy{
+    text-align: center;
+}
+
+#besked{
+    width: 100%;
+    height: 100px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.send{
+    text-align: right;
+}
+
+.send button{
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+/*Kontakt-side Caroline*/
 
 
 @media (min-width: 800px) {
