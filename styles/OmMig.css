@@ -80,3 +80,30 @@ img {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+
+@media (min-width: 800px) {
+    .overskrift {
+        font-size: 60px;
+    }
+
+    .tekstomvirksomhed {
+        font-size: 20px;
+        margin-left: 220px;
+        margin-right: 200px;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+    }
+
+    .OmMig {
+        font-size: 36px;
+    }
+
+    .hvemeralex {
+        font-size: 20px;
+        margin-left: 220px;
+        margin-right: 200px;
+    }
+}
