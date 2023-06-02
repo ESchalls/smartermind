@@ -10,62 +10,71 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="../images/placeholder.png" alt="placeholder">
-        <h1>Smarter Mind Academy</h1>
+        <a href="../index.html"><img class="smartermind-logo" src="../images/logo sm white.png" alt="Smarter Mind Academy Logo"></a>
         <img class="logo hidden" src="../images/1x1.jpg" alt="placeholder">
         <section class="navigation">
-            <i class="fa-solid fa-bars" id="burger-bars"></i>
+            <i class="fa-solid fa-bars burger-bars" id="burger-bars"></i>
         </section>
     </header>
    
     <!-- Navigation menu, shows as dropdown menu on phone. -->
     <nav class="dropdown" id="dropdown">
-      <li><a href="#page1">Page1</a></li>
-      <li><a href="#page2">Page2</a></li>
-      <li><a href="#page3">Page3</a></li>
+        <li><a href="../index.html">Forside</a></li>
+        <li><a href="#page2">Booking tbd</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="#page4">Om tbd</a></li>
     </nav>
 
     <nav class="navbarpc">
-        <a href="#page1"><li>Page1</li></a>
-        <a href="#page2"><li>Page2</li></a>
-        <a href="#page3"><li>Page3</li></a>
+        <li><a href="../index.html">Forside</a></li>
+        <li><a href="#page2">Booking tbd</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="#page4">Om tbd</a></li>
     </nav>
 
     <!--Min kode-->
-        <h2 class="kontakt">Kontakt</h2>
-        <p class="catchy">Hjælp os med at hjælpe dig!</p>
+        <h1>Kontakt</h1>
+        <h2>Hjælp os med at hjælpe dig!</h2>
 
-    <section>
+    <section class="kontakt-section">
         <label for="fname">Navn</label>
-        <input type="text" id="fname" name="fname" placeholder="Caroline"></input>
+        <input type="text" id="fname" name="fname" placeholder="Fornavn" autocomplete="given-name"></input>
     </section>
 
-    <section>
+    <section class="kontakt-section">
         <label for="email">E-mail</label>
-        <input type="text" id="email" name="email" placeholder="Thebine13@gmail.com"></input>
+        <input type="text" id="email" name="email" placeholder="example@email.com" autocomplete="email"></input>
     </section>
 
-    <section>
+    <section class="kontakt-section">
         <label for="besked">Din besked</label>
-        <input type="text" id="besked" name="besked" placeholder="Jeg vil gerne vide mere om"></input>
+        <input type="text" id="besked" name="besked" placeholder="Jeg vil gerne vide mere om..."></input>
     </section>
 
-    <section class="container">
+    <section class="kontakt-section container">
         <input type="checkbox">
         <p>Jeg accepterer, at dette websted gemmer mine indsendte oplysninger, så de kan svare på min forespørgsel. </p>
     </section>
 
-    <a href="henvendelse.html" class="send">
-    <button>Send</button>
+    <a class="kontakt-section send" href="henvendelse.html">
+        <button>Send</button>
     </a>
     <!--Min kode-->
 
     <footer>
-
+        <section>
+            <h4>POWERED BY</h4>
+            <p>Curius ApS</p>
+            <p>The Value Footprint ApS</p>
+        </section>
+        <section>
+            <h4>KONTAKT</h4>
+            <p>Email: <a href="mailto:info@smartermind.academy" class="email-link">info@smartermind.academy</a></p>
+        </section>
     </footer>
 
     <!-- Links to the javascript file -->
-    <script src="java/java.js"></script>
+    <script src="../java/java.js"></script>
 
     <!-- Links to Font Awesome, used for high quality icons -->
     <script src="https://kit.fontawesome.com/5bac26c012.js" crossorigin="anonymous"></script>
