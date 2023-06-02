@@ -25,6 +25,7 @@ body {
     font-size: 32px;
     color: var(--dark-navy);
     font-family: var(--basic-font);
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -48,13 +49,28 @@ img {
     margin-top: 30px;
     margin-left: 10px;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
 }
 
 .OmMig {
     text-align: center;
-    font-size: 32px;
+    font-size: 20px;
     color: var(--dark-navy);
     font-family: var(--basic-font);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.hvemeralex {
+    font-size: 14px;
+    font-family: var(--basic-font);
+    color: var(--white);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--light-navy);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
