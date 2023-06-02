@@ -46,7 +46,15 @@ img {
     width: 190px;
     height: auto;
     margin-top: 30px;
-    margin-left: 90px;
+    margin-left: 10px;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+
+.OmMig {
+    text-align: center;
+    font-size: 32px;
+    color: var(--dark-navy);
+    font-family: var(--basic-font);
+    padding-bottom: 30px;
 }
