@@ -1,5 +1,5 @@
 
-/* Root makes sure we have our colours in check, if you change a colour in the root, it changes the colour everywhere on the site. */
+/* Emil har sat root ind, sådan så at når man skal ændre farve, så kan man nemt finde dem, og hvis man ændre farve i root, så ændre den automatisk alle andre steder.*/
 :root {
     --light-navy: #041E40;
     --dark-navy: #051326;
@@ -10,178 +10,40 @@
     --basic-font: sans-serif,helvetica;
 }
 
-/* Removes all default padding and margin from the site */
+/* Emil har fjernet al padding og margin fra siden*/
 * {
     padding: 0;
     margin: 0;
 }
 
-/* Start of the header */
-
-header {
-    font-family: var(--basic-font);
-    background-color: var(--light-navy);
+body {
+    background-color:var(--light-gray);
 }
 
-.logo {
-    width: 64px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 16px;
-}
-
-.hidden {
-    display: none;
-}
-
-h1 {
+.overskrift { 
     text-align: center;
-    color: var(--white);
-    padding: 8px 0 8px 0;
-    font-size: 28px;
-}
-
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.fa-solid {
-    font-size: 40px;
-    color: var(--white);
-    margin: 8px 24px 16px 24px;
-}
-
-.navbarpc {
-    display: none;
-}
-
-/* End of the header */
-
-
-
-/* The start of the dropdown menu */
-
-/* Makes sure the list elements have no styles */
-li {
-    list-style: none;
-}
-
-/* Makes sure the dropdown menu is hidden as default */
-.dropdown {
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    background-color: var(--dark-navy);
-    width: 100%;
-    transition: opacity 0.25s ease, visibility 0s linear 0.3s;
-}
-
-/* Show class is only shown after you click, making it visible. */
-.dropdown.show {
-opacity: 1;
-visibility: visible;
-transition-delay: 0s;
-}
-
-.dropdown a {
-    color: var(--white);
-    text-decoration: none;
+    font-size: 32px;
+    color: var(--dark-navy);
     font-family: var(--basic-font);
-    display: block;
-    padding: 8px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 16px;
-    margin-left: 16px;
+    padding-bottom: 30px;
 }
 
-.show {
-    display: block;
+.tekstomvirksomhed {
+    font-size: 14px;
+    font-family: var(--basic-font);
+    color: var(--white);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--light-navy);
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
 }
 
-/* The end of the dropdown menu */
-
-
-/* Start of the footer */
-
-footer {
-    background-color: var(--dark-navy);
-    padding: 50px;
-}
-
-/* End of the footer */
-
-
-@media (min-width: 800px) {
-
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo {
-        margin: 16px;
-        padding: 0;
-    }
-
-    header h1 {
-        text-align:center;
-        margin: 0 auto;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .navbarpc {
-        display: flex;
-        justify-content: center;
-        border-style: solid;
-        border-width: 2px;
-        background-color: var(--light-navy);
-    }
-
-    .navbarpc li {
-        text-decoration: none;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        font-family: var(--basic-font);
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
-        font-size: 20px;
-    }
-
-    /* These 4 removes all default styling for links */
-    a:link {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    a:visited {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    a:active {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    .hidden {
-        display: block;
-        visibility: hidden;
-        color: var(--white);
-    }
-
+img {
+    width: 190px;
+    height: auto;
+    padding-top: 30px;
 }
