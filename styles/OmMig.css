@@ -15,11 +15,13 @@
     padding: 0;
     margin: 0;
 }
-
+/*Emma start*/
+/*Her ændrede Emma baggrundsfarven på siden*/
 body {
     background-color:var(--light-gray);
 }
 
+/*Her ændrede Emma i overskriften (h2), ved at rykke den i midten og ændrede farve, font og størrelse*/
 .overskrift { 
     text-align: center;
     font-size: 32px;
@@ -29,6 +31,7 @@ body {
     padding-bottom: 30px;
 }
 
+/*Her ændrede Emma i teksten omkring virksomheden (p), ved at ændre font, størrelse, farve og position af teksten, samtidig tilføje baggrundsfarve i form af box*/
 .tekstomvirksomhed {
     font-size: 14px;
     font-family: var(--basic-font);
@@ -43,6 +46,7 @@ body {
     border-radius: 10px;
 }
 
+/*Her ændrede Emma i billedet, ved at rykke det ind mod midten samt ændre størrelse og tilføje runde hjørner*/
 img {
     width: 190px;
     height: auto;
@@ -52,6 +56,7 @@ img {
     margin-bottom: 8px;
 }
 
+/* Her ændrede Emma i navnet på kunden (h2), ved at rykke det ind mod midten samt ændre font, størrelse og farve*/
 .OmMig {
     text-align: center;
     font-size: 20px;
@@ -60,6 +65,7 @@ img {
     padding-bottom: 10px;
 }
 
+/*Her ændrede Emma i information om kunden (p), ved at ændre størrelse, font, farve, position, tilføje runde hjørner og tilføje baggrundsfarve i form af box*/
 .hvemeralex {
     font-size: 14px;
     font-family: var(--basic-font);
