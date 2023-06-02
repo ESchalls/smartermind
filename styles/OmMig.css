@@ -82,25 +82,31 @@ img {
 }
 
 @media (min-width: 800px) {
+
+    /*Emma ændrede på størrelsen*/
     .overskrift {
         font-size: 60px;
     }
 
+    /*Emma ændrede på størrelse og postitionen*/
     .tekstomvirksomhed {
         font-size: 20px;
         margin-left: 220px;
         margin-right: 200px;
     }
 
+    /*Emma ændrede på størrelsen på billedet*/
     img {
         width: 300px;
         height: auto;
     }
 
+    /*Emma ændrede på størrelsen*/
     .OmMig {
         font-size: 36px;
     }
 
+    /*Emma ændrede på størrelsen og positionen*/
     .hvemeralex {
         font-size: 20px;
         margin-left: 220px;
