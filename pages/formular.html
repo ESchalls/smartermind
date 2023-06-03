@@ -33,22 +33,42 @@
     </nav>
 
     <!--Min kode-->
-        <h1>Kontakt</h1>
+        <h1>Booking</h1>
         <h2>Hjælp os med at hjælpe dig!</h2>
 
     <section class="kontakt-section">
-        <label for="fname">Navn</label>
-        <input type="text" id="fname" name="fname" placeholder="Fornavn" autocomplete="given-name"></input>
+        <label for="hvor">Hvor</label>
+        <input type="text" id="hvor" name="hvor" placeholder="Adresse" autocomplete="street-address"></input>
+    </section>
+
+    <section class="kontakt-section">
+        <label for="hvornår">Hvornår</label>
+        <input type="text" id="hvornår" name="hvornår" placeholder="dd/mm/yy"></input>
+    </section>
+
+    <section class="kontakt-section">
+        <label for="produkt">Produkt</label>
+        <input type="text" id="produkt" name="produkt" placeholder="Webinar, foredrag, kurser..."></input>
+    </section>
+
+    <section class="kontakt-section">
+        <label for="firmanavn/navn">Firma navn/Navn</label>
+        <input type="text" id="firmanavn/navn" name="firmanavn/navn" autocomplete="organization"></input>
     </section>
 
     <section class="kontakt-section">
         <label for="email">E-mail</label>
-        <input type="text" id="email" name="email" placeholder="example@email.com" autocomplete="email"></input>
+        <input type="text" id="email" name="email" autocomplete="email"></input>
+    </section>
+
+    <section class="kontakt-section">
+        <label for="tlf">Tlf.</label>
+        <input type="text" id="tlf" name="tlf" placeholder="Eks. 1234 5678" autocomplete="tel"></input>
     </section>
 
     <section class="kontakt-section">
         <label for="besked">Din besked</label>
-        <input type="text" id="besked" name="besked" placeholder="Jeg vil gerne vide mere om..."></input>
+        <input type="text" id="besked" name="besked" placeholder="Er der noget særligt vi bør vide..?"></input>
     </section>
 
     <section class="kontakt-section container">

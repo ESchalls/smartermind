@@ -7,33 +7,44 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-y4Wu0dT+YwjZK9cZTd0n+Jd3zjteJkwIc+J++Qgi7bpI8D3pd2NtmhW2BZiJ0UGo" crossorigin="anonymous">
     <title>Smarter Mind Academy</title>
+    <!--noIndex, noFollow, makes the site invisible when searching without the direct url-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>
+    
     <header>
-        <img class="logo" src="images/placeholder.png" alt="placeholder">
-        <h1>Smarter Mind Academy</h1>
+        <img class="smartermind-logo" src="images/logo sm white.png" alt="Smarter Mind Academy Logo">
         <img class="logo hidden" src="images/1x1.jpg" alt="placeholder">
         <section class="navigation">
-            <i class="fa-solid fa-bars" id="burger-bars"></i>
+            <i class="fa-solid fa-bars burger-bars" id="burger-bars"></i>
         </section>
     </header>
    
     <!-- Navigation menu, shows as dropdown menu on phone. -->
     <nav class="dropdown" id="dropdown">
-      <li><a href="#page1">Page1</a></li>
+      <li><a href="index.html">Forside</a></li>
       <li><a href="#page2">Page2</a></li>
-      <li><a href="#page3">Page3</a></li>
+      <li><a href="pages/kontakt.html">Kontakt</a></li>
+      <li><a href="#page4">Page4</a></li>
     </nav>
 
     <nav class="navbarpc">
-        <a href="#page1"><li>Page1</li></a>
-        <a href="#page2"><li>Page2</li></a>
-        <a href="#page3"><li>Page3</li></a>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="#page2">Page2</a></li>
+        <li><a href="pages/kontakt.html">Kontakt</a></li>
+        <li><a href="#page4">Page4</a></li>
     </nav>
 
-
     <footer>
-
+        <section>
+            <h4>POWERED BY</h4>
+            <p>Curius ApS</p>
+            <p>The Value Footprint ApS</p>
+        </section>
+        <section>
+            <h4>KONTAKT</h4>
+            <p>Email: <a href="mailto:info@smartermind.academy" class="email-link">info@smartermind.academy</a></p>
+        </section>
     </footer>
 
     <!-- Links to the javascript file -->
