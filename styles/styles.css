@@ -1,95 +1,97 @@
 
-/* Root makes sure we have our colours in check, if you change a colour in the root, it changes the colour everywhere on the site. */
+/* Root sørger for vi har farverne ordnet, brug "var(--example)" til at hentyde til rooten, så hvis farverne senere ændres bliver de ændret overalt */
 :root {
-    --light-navy: #041E40;
-    --dark-navy: #051326;
-    --light-blue: #79AEF2;
+    --business-blue: #041E40;
+    --black-blue: #051326;
+    --work-blue: #79AEF2;
     --white: white;
-    --light-gray: #A6A6A6;
+    --grey-perfection: #A6A6A6;
     --black: black;
-    --basic-font: sans-serif,helvetica;
+    --basic-font: helvetica,arial;
+    --form-input: white;
 }
 
-/* Removes all default padding and margin from the site */
+/* Fjerner alt padding/margin fra siden */
 * {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background: var(--light-gray);
-    min-height: 100vh;
+/* Sørger for at baggrunden er grå, fonten er den samme alle steder og at siden altid har en minimumshøjde som er enheden den bliver set på's højde */
+body {
+    background-color: var(--grey-perfection);
+    font-family: var(--basic-font);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Start of the header */
+/* Fjerner alt standard styling fra links */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+/* Header start */
 
 header {
     font-family: var(--basic-font);
-    background-color: var(--light-navy);
+    background-color: var(--business-blue);
+    padding: 32px 24px 16px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.logo {
-    width: 64px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 16px;
+.smartermind-logo {
+    width: 150px;
+}
+
+.fa-solid {
+    font-size: 60px;
+    color: var(--white);
+    margin: auto 0 auto 0;
 }
 
 .hidden {
     display: none;
 }
 
-h1 {
-    text-align: center;
-    color: var(--white);
-    padding: 8px 0 8px 0;
-    font-size: 28px;
-}
-
 .navigation {
     display: flex;
-    justify-content: flex-end;
-}
-
-.fa-solid {
-    font-size: 40px;
-    color: var(--white);
-    margin: 8px 24px 16px 24px;
+    justify-content: center;
 }
 
 .navbarpc {
     display: none;
 }
 
-/* End of the header */
+/* Header slut */
 
 
+/* Dropdown start */
 
-/* The start of the dropdown menu */
-
-/* Makes sure the list elements have no styles */
+/* Gør så alle li elementer ikke har nogle liste styles */
 li {
     list-style: none;
 }
 
-/* Makes sure the dropdown menu is hidden as default */
+/* Gør sådan at dropdown menuen er gemt væk som standard */
 .dropdown {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    background-color: var(--dark-navy);
+    background-color: var(--black-blue);
     width: 100%;
     transition: opacity 0.25s ease, visibility 0s linear 0.3s;
+    margin-top: 160px;
 }
 
-/* Show class is only shown after you click, making it visible. */
+/* Show classen er kun synlig efter der bliver trykkket på burger menuen */
 .dropdown.show {
-opacity: 1;
-visibility: visible;
-transition-delay: 0s;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    margin-top: 160px;
 }
 
 .dropdown a {
@@ -97,50 +99,156 @@ transition-delay: 0s;
     text-decoration: none;
     font-family: var(--basic-font);
     display: block;
-    padding: 8px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 16px;
-    margin-left: 16px;
+    font-size: 32px;
+    padding: 12px;
+    margin: 10px 16px 10px 16px;
+    text-align: center;
 }
 
 .show {
     display: block;
 }
 
-/* The end of the dropdown menu */
+/* Dropdown menu slut */
 
 
-/* Start of the footer */
-
-footer {
-    background-color: var(--dark-navy);
-    padding: 50px;
-    margin-top: auto;
+h1 {
+    margin-top: 48px;
+    text-align: center;
+    color: var(--black-blue);
+    margin-bottom: 32px;
 }
 
-/* End of the footer */
+h2 {
+    margin-top: 16px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--black-blue);
+}
 
-/*************Kontakt-side Caroline*************/
-section{
-    margin: 40px;
+
+/* Forside start */
+
+.brain {
+    width: 120px;
+    margin: 0 auto 8px auto;
+}
+
+.mind {
+    width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+ 
+}
+
+/* Forside slut */
+
+
+/* Booking side start */
+
+.blok {
+    background-color: var(--business-blue);
+    border-radius: 10px;
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.blok p {
+    margin: 10px;
+}
+
+.picbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--business-blue);
+    border-radius: 10px;
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    height: 160px;
+}
+
+.boks {
+    font-size: 14px;
+    text-align: center;
+    width: 50%;
+    padding: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.image-left {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.image-left-section {
+    width: 50%;
+}
+
+.image-right {
+    width: 100%;
+    height: 160px;
+    border-radius: 0 10px 10px 0; 
+    object-fit: cover;
+    object-position: 75%;
+}
+
+.image-right-section {
+    width: 50%;
+}
+
+p {
+    color: var(--white);
+}
+
+.booking-section {
+    margin: 0 auto 0 auto;
+    width: 320px;
+    text-align: left;
+}
+
+.booking-button {
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    margin: 0 0 40px 0;
+    color: var(--black-blue);
+}
+
+/* Booking side slut */
+
+
+/* Kontakt side start */
+
+.kontakt-section{
+    margin: 40px auto 0 auto;
+    width: 320px;
+}
+
+label {
+    font-weight: 550;
+    color:var(--black-blue);
 }
 
 input{
-    background-color: var(--white);
+    background-color: var(--form-input);
     width: 100%;
     height: 30px;
-    align-items: center;
     border-color: black;
-}
-
-h2{
-    margin: 5px;
-    text-align: center;
-}
-
-.catchy{
-    text-align: center;
+    padding-left: 4px;
 }
 
 #besked{
@@ -154,6 +262,15 @@ h2{
     justify-content: space-between;
 }
 
+.container p {
+    color: var(--black-blue);
+}
+
+.container input {
+    width: 80px;
+    margin-right: 16px;
+}
+
 .send{
     text-align: right;
 }
@@ -162,94 +279,65 @@ h2{
     font-size: 20px;
     padding: 4px;
     border-radius: 10px;
+    width: 150px;
+    height: 45px;
+    margin: 0 0 40px 0;
+    color: var(--black-blue);
 }
 
-/******************Kontakt-side Caroline*******************/
+/* Kontakt side slut */
 
-/*Tak for henvendelse*/
+
+/*Henvendelse side*/
+
 .tak{
-    background-color: var(--light-navy);
+    background-color: var(--business-blue);
     font-size: 20px;
     text-align: center;
+    width: 320px;
     border-radius: 10px;
-    margin: 25px;
-    padding: 25px;
+    margin: 25px auto 0 auto;
 }
 
 .tak p{
-    color: white;
+    color: var(--white);
+    margin: 10px;
 }
-/*Tak for henvendelse*/
+
+/*Henvendelse side*/
 
 
-@media (min-width: 800px) {
 
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+/* Om mig start */
 
-    .logo {
-        margin: 16px;
-        padding: 0;
-    }
-
-    header h1 {
-        text-align:center;
-        margin: 0 auto;
-    }
-
-    .navigation {
-        display: none;
-    }
-
-    .navbarpc {
-        display: flex;
-        justify-content: center;
-        border-style: solid;
-        border-width: 2px;
-        background-color: var(--light-navy);
-    }
-
-    .navbarpc li {
-        text-decoration: none;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        font-family: var(--basic-font);
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
-        font-size: 20px;
-    }
-
-    /* These 4 removes all default styling for links */
-    a:link {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    a:visited {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    a:hover {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    a:active {
-        text-decoration: none;
-        color: var(--white);
-    }
-
-    .hidden {
-        display: block;
-        visibility: hidden;
-        color: var(--white);
-    }
-
+.aleximage {
+    width: 190px;
+    height: auto;
+    border-radius: 10px;
+    margin: 32px auto 8px auto;
 }
+
+/* Om mig slut */
+
+
+/* Footer start */
+
+footer {
+    text-decoration: none;
+    background-color: var(--black-blue);
+    padding: 4px 16px 32px 16px;
+    color: var(--white);
+    font-family: var(--basic-font);
+    margin-top: auto;
+}
+
+footer h4 {
+    margin-bottom: 8px;
+    margin-top: 32px;
+}
+
+.email-link {
+    color: var(--work-blue);
+}
+
+/* Footer slut */

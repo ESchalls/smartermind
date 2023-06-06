@@ -7,39 +7,89 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-y4Wu0dT+YwjZK9cZTd0n+Jd3zjteJkwIc+J++Qgi7bpI8D3pd2NtmhW2BZiJ0UGo" crossorigin="anonymous">
     <title>Smarter Mind Academy</title>
+    <!-- noindex og nofollow gør hjemmesiden usynlig overfor googles algoritme, fjern på endelig hjemmeside -->
+    <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>
+    
+    <!-- Headeren på hjemmesiden, indenholder logo og burger menu -->
     <header>
-        <img class="logo" src="images/placeholder.png" alt="placeholder">
-        <h1>Smarter Mind Academy</h1>
-        <img class="logo hidden" src="images/1x1.jpg" alt="placeholder">
+        <a href="index.html">
+            <img class="smartermind-logo" src="images/logo-sm-white.png" alt="Smarter Mind Academy Logo">
+        </a>
+        <img class="logo hidden" src="../images/1x1.jpg" alt="placeholder">
         <section class="navigation">
-            <i class="fa-solid fa-bars" id="burger-bars"></i>
+            <i class="fa-solid fa-bars burger-bars" id="burger-bars"></i>
         </section>
     </header>
    
-    <!-- Navigation menu, shows as dropdown menu on phone. -->
+    <!-- Burger menu, bliver vist når der bliver trykket på burger menu ikonet -->
     <nav class="dropdown" id="dropdown">
-      <li><a href="#page1">Page1</a></li>
-      <li><a href="#page2">Page2</a></li>
-      <li><a href="#page3">Page3</a></li>
+        <li><a href="../index.html">Forside</a></li>
+        <li><a href="pages/booking.html">Booking</a></li>
+        <li><a href="pages/kontakt.html">Kontakt</a></li>
+        <li><a href="pages/omside.html">Om</a></li>
     </nav>
 
-    <nav class="navbarpc">
-        <a href="#page1"><li>Page1</li></a>
-        <a href="#page2"><li>Page2</li></a>
-        <a href="#page3"><li>Page3</li></a>
-    </nav>
+    <h1>Smarter Mind</h1>
 
+    <img class="brain" src="images/brain2.svg" alt="brain image">
+    
+    <!-- Kort intro til Smarter Mind Academy -->
+    <section class="blok">
+        <p> Formålet med Smarter Mind er at sætte fokus på den fremtidige skabelse, 
+        <br>af forudsætninger på den daglige udvikling. </br>Hvordan arbejder vores hjerne bedst? Ved at forstå og derefter forbedre sig selv. 
+        <br>Vores programmer indebærer at bygge og bearbejde sine eksisterende mønstre. </br>
+        </p>
+    </section>
+    
+    <h2>Hvordan bliver man smartere?</h2>
+    
+    <img class="mind" src="images/humanmind.png" alt="The Human Mind - Creative Mind, Strategic Mind, Analytical Mind, Performing Mind, Deciding Mind, Developing Mind, Collaborating Mind, Leading Mind, Digital Mind, Changing Mind, ">
+    
+    <!-- Information om hjernen -->
+    <section class="blok">
+        <p> 
+        Vores hjerne er lavet til ikke at kunne multitaske, hvilket vil sige, at vi kun kan fokusere på én ting ad gangen. 
+        <br>Hjernen er en stor maskine som nemt kan genkende mønstre og indtryk. </br>
+        Disse mønstre bliver gemt af hjernen, hvilket gør det svært at ændre. 
+        <br>For at ændre sine mønstrer, skal man kunne træne sin hjerne til at blive bedre til at tænke og handle på andre måder.</br> 
+        Derfor tilbyder vi kurser, webinarer, foredrag og aktiviteter til dig og eller dine kollegaer.
+        </p>
+    </section>
+    
+    
+    <h2>Agile Cognitive Thinking</h2>
+    <img class="mind" src="images/ACT.png" alt="Agile Cognitive Thinking - A program for growing the future business by growing the thinking and actions of the people.">
+    
+    <!-- Information om kognitiv tænkning -->
+    <section class="blok">
+        <p> 
+            “Thinking. The activity of using one’s mind to produce thoughts” - Alex Fonnesbech.
+            <br>Alle er forskellige og har forskellige ambitioner, som de vil opnå. 
+            Dog kræver det, at man også arbejder for, at opnå det man vil. Gennem kognitiv tænkning, 
+            får man større forståelse for,
+        hvordan ens handlinger har påvirkning på andre. 
+        </br></p>
+    </section>
 
+    <!-- Footeren på hjemmesiden -->
     <footer>
-
+        <section>
+            <h4>POWERED BY</h4>
+            <p>Curius ApS</p>
+            <p>The Value Footprint ApS</p>
+        </section>
+        <section>
+            <h4>KONTAKT</h4>
+            <p>Email: <a href="mailto:info@smartermind.academy" class="email-link">info@smartermind.academy</a></p>
+        </section>
     </footer>
 
-    <!-- Links to the javascript file -->
+    <!-- Linker til den lokale javascript fil -->
     <script src="java/java.js"></script>
 
-    <!-- Links to Font Awesome, used for high quality icons -->
+    <!-- Linker til et eksternt javascript dokument fra Font Awesome, giver ikoner i høj kvalitet -->
     <script src="https://kit.fontawesome.com/5bac26c012.js" crossorigin="anonymous"></script>
 
 </body>

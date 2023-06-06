@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-y4Wu0dT+YwjZK9cZTd0n+Jd3zjteJkwIc+J++Qgi7bpI8D3pd2NtmhW2BZiJ0UGo" crossorigin="anonymous">
+    <title>Booking Formular</title>
+    <!-- noindex og nofollow gør hjemmesiden usynlig overfor googles algoritme, fjern på endelig hjemmeside -->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+</head>
+<body>
+
+    <!-- Headeren på hjemmesiden, indenholder logo og burger menu -->
+    <header>
+        <a href="../index.html">
+            <img class="smartermind-logo" src="../images/logo-sm-white.png" alt="Smarter Mind Academy Logo">
+        </a>
+        <img class="logo hidden" src="../images/1x1.jpg" alt="placeholder">
+        <section class="navigation">
+            <i class="fa-solid fa-bars burger-bars" id="burger-bars"></i>
+        </section>
+    </header>
+   
+    <!-- Burger menu, bliver vist når der bliver trykket på burger menu ikonet -->
+    <nav class="dropdown" id="dropdown">
+        <li><a href="../index.html">Forside</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="omside.html">Om</a></li>
+    </nav>
+
+    <h1>Booking</h1>
+    <h2>Hjælp os med at hjælpe dig!</h2>
+
+    <!-- Tekstboks til hvor man ønsker produktet-->
+    <section class="kontakt-section">
+        <label for="hvor">Hvor</label>
+        <input type="text" id="hvor" name="hvor" placeholder="Adresse" autocomplete="street-address"></input>
+    </section>
+
+    <!-- Tekstboks til hvilken dato man gerne vil have sit produkt -->
+    <section class="kontakt-section">
+        <label for="hvornår">Hvornår</label>
+        <input type="text" id="hvornår" name="hvornår" placeholder="dd/mm/yy"></input>
+    </section>
+
+    <!-- Tekstboks til hvilket produkt man er interesseret i -->
+    <section class="kontakt-section">
+        <label for="produkt">Produkt</label>
+        <input type="text" id="produkt" name="produkt" placeholder="Webinar, foredrag, kurser..."></input>
+    </section>
+
+    <!-- Tekstboks til navn/firmanavn-->
+    <section class="kontakt-section">
+        <label for="firmanavn/navn">Firma navn/Navn</label>
+        <input type="text" id="firmanavn/navn" name="firmanavn/navn" autocomplete="organization"></input>
+    </section>
+
+    <!-- Tekstboks til e-mail -->
+    <section class="kontakt-section">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="example@mail.com" autocomplete="email"></input>
+    </section>
+
+    <!-- Tekstboks til telefon nummer -->
+    <section class="kontakt-section">
+        <label for="tlf">Tlf.</label>
+        <input type="text" id="tlf" name="tlf" placeholder="12 34 56 78" autocomplete="tel"></input>
+    </section>
+
+    <!-- Tekstboks til yderligere information -->
+    <section class="kontakt-section">
+        <label for="besked">Din besked</label>
+        <input type="text" id="besked" name="besked" placeholder="Er der noget særligt vi bør vide..?"></input>
+    </section>
+
+    <!-- Checkbox for at acceptere at hjemmesiden gemmer oplysninger -->
+    <section class="kontakt-section container">
+        <input type="checkbox">
+        <p>Jeg accepterer, at dette websted gemmer mine indsendte oplysninger, så de kan svare på min forespørgsel. </p>
+    </section>
+
+    <!-- Send knappen -->
+    <form class="kontakt-section send" action="henvendelse.html">
+        <button>Send</button>
+    </form>
+
+    <!-- Footeren på hjemmesiden -->
+    <footer>
+        <section>
+            <h4>POWERED BY</h4>
+            <p>Curius ApS</p>
+            <p>The Value Footprint ApS</p>
+        </section>
+        <section>
+            <h4>KONTAKT</h4>
+            <p>Email: <a href="mailto:info@smartermind.academy" class="email-link">info@smartermind.academy</a></p>
+        </section>
+    </footer>
+
+    <!-- Linker til den lokale javascript fil -->
+    <script src="../java/java.js"></script>
+
+    <!-- Linker til et eksternt javascript dokument fra Font Awesome, giver ikoner i høj kvalitet -->
+    <script src="https://kit.fontawesome.com/5bac26c012.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
