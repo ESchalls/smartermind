@@ -52,10 +52,6 @@ header {
     margin: auto 0 auto 0;
 }
 
-.hidden {
-    display: none;
-}
-
 .navigation {
     display: flex;
     justify-content: center;
